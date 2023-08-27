@@ -1,0 +1,21 @@
+.primeContainer {
+  display: flex;
+  flex-direction: column;
+}
+.prime {
+  width: 100vw;
+  height: 40vh;
+}
+.head {
+  color: blue;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin: 10px;
+}
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+}
