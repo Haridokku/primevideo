@@ -3,17 +3,17 @@ import ReactPlayer from 'react-player'
 import {IoMdClose} from 'react-icons/io'
 import './index.css'
 
+import 'reactjs-popup/dist/index.css'
+
 const MovieItem = props => {
   const {movieDetail} = props
   const {thumbnailUrl, videoUrl} = movieDetail
   return (
-    <div className="popup-container">
+    <div>
       <Popup
         modal
         trigger={
-          <button type="button" className="trigger-button">
-            <img src={thumbnailUrl} alt="thumbnail" className="thumbnail" />
-          </button>
+          <img src={thumbnailUrl} alt="thumbnail" className="thumbnail" />
         }
         className="popup-content"
       >
@@ -25,7 +25,7 @@ const MovieItem = props => {
               data-testid="closeButton"
               onClick={() => close()}
             >
-              <IoMdClose size="30" />
+              <IoMdClose size={20} color="#231f20" />
             </button>
             <div className="responsive-container">
               <ReactPlayer url={videoUrl} controls />
