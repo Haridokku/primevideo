@@ -1,10 +1,10 @@
 .primeContainer {
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 32px;
+  min-height: 100vh;
+  background-color: black;
 }
 .prime {
-  width: 100vw;
-  height: 40vh;
+  width: 100%;
 }
 .head {
   color: blue;
@@ -14,8 +14,13 @@
   margin: 10px;
 }
 .bottomContainer {
-  display: flex;
-  flex-direction: column;
-
-  width: 100vw;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .bottomContainer {
+    max-width: 1110px;
+  }
+}
+
