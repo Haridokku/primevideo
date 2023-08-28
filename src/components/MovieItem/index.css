@@ -6,25 +6,32 @@
 .thumbnail {
   margin: 5px;
   border-radius: 8px;
-  width: 50px;
-  height: 50px;
+  width: 215px;
+  height: 150px;
+  cursor: pointer;
 }
 .popup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 468px;
+  justify-content: center;
+  height: 100%;
 }
-@media Screen and (min-width: 768px) {
-  .popup-container {
-    width: 1110px;
-  }
+
+.popup-content {
+  background-color: #ffffff;
+  width: 750px;
+  height: 460px;
+  border-radius: 16px;
 }
 .closeButton {
   outline: none;
   cursor: pointer;
   align-self: flex-end;
   border: none;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
 }
 .trigger-button {
   padding: 8px 15px 8px 15px;
@@ -41,6 +48,12 @@
   height: 30vh;
 }
 .responsive-container {
-  display: flex;
-  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 48px;
+  margin-left: 48px;
+  margin-right: 48px;
 }
+.list-item {
+  list-style-type: none;
+}
+
