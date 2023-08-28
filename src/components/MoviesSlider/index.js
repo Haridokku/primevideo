@@ -8,13 +8,11 @@ const MoviesSlider = props => {
 
   return (
     <>
-      <div className="slider-container">
         <Slider>
           {detailsList.map(each => (
             <MovieItem key={each.id} movieDetail={each} />
           ))}
         </Slider>
-      </div>
     </>
   )
 }
