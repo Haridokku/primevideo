@@ -7,9 +7,12 @@ const PrimeVideo = props => {
   const getActionsMovies = moviesList.filter(
     movie => movie.categoryId === 'ACTION',
   )
+  console.log(getActionsMovies)
+
   const getComedyMovies = moviesList.filter(
     movie => movie.categoryId === 'COMEDY',
   )
+  console.log(getComedyMovies)
 
   return (
     <>
